@@ -15,6 +15,7 @@
 #elif defined(__unix__) || defined(__unix) || defined(unix) || (defined(__APPLE__) && defined(__MACH__))
 #include <unistd.h>
 #include <sys/resource.h>
+#include <stdio.h>
 
 #if defined(__APPLE__) && defined(__MACH__)
 #include <mach/mach.h>
@@ -125,12 +126,12 @@ size_t getCurrentRSS( )
 }
 
 
-int zhudi() {
+int test() {
     size_t currentSize = getCurrentRSS();
 //    printf("%s",currentSize);
-    printf("The value of a : %zu", currentSize);
+    printf("The value of current: %zu bytes\n", currentSize);
 
     size_t peakSize = getPeakRSS( );
-    printf("The value of b : %zu", peakSize);
-    return  2;
+    printf("The value of peak: %zu bytes\n", peakSize);
+    return 0;
 }

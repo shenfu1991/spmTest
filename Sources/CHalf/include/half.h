@@ -34,6 +34,6 @@
 #error "Cannot define getPeakRSS( ) or getCurrentRSS( ) for an unknown OS."
 #endif
 
-int zhudi();
+int test();
 
 #endif /* Header_h */
