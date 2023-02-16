@@ -1,3 +1,3 @@
 # c2swift
 
-A description of this package.
+Example of using c language in SPM
