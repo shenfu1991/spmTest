@@ -11,5 +11,8 @@ public struct c2swift {
         let zh = test()
         print(zh)
         
+        let cps = getInfos()
+        print(cps)
+        
     }
 }

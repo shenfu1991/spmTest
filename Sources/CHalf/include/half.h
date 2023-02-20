@@ -8,6 +8,7 @@
 
 #ifndef half_h
 #define half_h
+#include "CPU.h"
 #include <unistd.h>
 
 #if defined(_WIN32)
