@@ -133,5 +133,5 @@ int test() {
 
     size_t peakSize = getPeakRSS( );
     printf("The value of peak: %zu bytes\n", peakSize);
-    return 0;
+    return (int)currentSize/1024/1024;
 }

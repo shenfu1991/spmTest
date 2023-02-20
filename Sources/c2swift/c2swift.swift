@@ -1,6 +1,4 @@
-#if SWIFT_PACKAGE
-import CHalf
-#endif
+
 
 @main
 public struct c2swift {
@@ -8,11 +6,9 @@ public struct c2swift {
 
     public static func main() {
         
-        let zh = test()
-        print(zh)
         
-        let cps = getInfos()
-        print(cps)
+        let cps = InfoClass.getMemoryInfo()
+        print("cps=\(cps)")
         
     }
 }
